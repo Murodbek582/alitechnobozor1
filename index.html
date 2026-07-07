@@ -320,8 +320,8 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
                                     stroke-linejoin="round" style="margin-right:5px">
-                                    <line x1="12" y1="5" x2="12" y2="19"/>
-                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
                                 </svg>
                                 <span>Katalog qo'shish</span>
                             </button>
@@ -329,8 +329,8 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" style="margin-right:5px">
-                                    <line x1="12" y1="5" x2="12" y2="19"/>
-                                    <line x1="5" y1="12" x2="19" y2="12"/>
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
                                 </svg>
                                 <span data-i18n="new_product">Yangi mahsulot</span>
                             </button>
@@ -364,9 +364,12 @@
                             <span data-i18n="warehouse">Ombor</span>
                         </button>
                         <button class="auth-tab" id="adminTabCatBtn" onclick="switchAdminTab('categories')">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
-                                <path d="M8 7h6"/><path d="M8 11h8"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                <path d="M8 7h6" />
+                                <path d="M8 11h8" />
                             </svg>
                             <span>Kataloglar</span>
                         </button>
@@ -391,7 +394,12 @@
                             <span data-i18n="reviews">Izohlar</span>
                         </button>
                         <button class="auth-tab" id="adminTabDeliveryBtn" onclick="switchAdminTab('delivery')">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3m1 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m11 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m-2-5h4l2 5v3h-7v-8Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M10 17h4V5H2v12h3m1 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m11 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m-2-5h4l2 5v3h-7v-8Z" />
+                            </svg>
                             <span>Dastavkalar</span>
                         </button>
                         <button class="auth-tab" id="adminTabChatBtn" onclick="switchAdminTab('chat')">
@@ -455,13 +463,26 @@
                     </div>
 
                     <div id="adminCategoriesSection" style="display:none">
-                        <div class="panel-header" style="margin-top: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
+                        <div class="panel-header"
+                            style="margin-top: 1rem; border-bottom: 2px solid var(--border); padding-bottom: 0.5rem; margin-bottom: 1.5rem;">
                             <h3 style="display: flex; align-items: center; gap: 8px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+                                    <path d="M8 7h6" />
+                                    <path d="M8 11h8" />
+                                </svg>
                                 Kataloglar Boshqaruvi
                             </h3>
-                            <button class="add-btn" onclick="openAddCategory()" style="width: auto; padding: 0.5rem 1rem; font-size: 0.85rem;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px;"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                            <button class="add-btn" onclick="openAddCategory()"
+                                style="width: auto; padding: 0.5rem 1rem; font-size: 0.85rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" style="margin-right: 5px;">
+                                    <line x1="12" y1="5" x2="12" y2="19" />
+                                    <line x1="5" y1="12" x2="19" y2="12" />
+                                </svg>
                                 Yangi Katalog
                             </button>
                         </div>
@@ -514,9 +535,10 @@
                                     <span data-i18n="registered_customers">Ro'yxatdan o'tgan mijozlar</span>
                                 </h4>
                                 <div style="margin-bottom: 1rem;">
-                                    <input type="text" id="adminUserSearchInput" placeholder="Mijoz qidirish (Ism, Email, Tel)..." 
-                                           style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid var(--border); background: var(--bg3); color: var(--text);"
-                                           oninput="renderAdminUsers()">
+                                    <input type="text" id="adminUserSearchInput"
+                                        placeholder="Mijoz qidirish (Ism, Email, Tel)..."
+                                        style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid var(--border); background: var(--bg3); color: var(--text);"
+                                        oninput="renderAdminUsers()">
                                 </div>
                                 <div class="data-table-container">
                                     <table class="data-table">
@@ -566,7 +588,12 @@
                     <div id="adminDeliverySection" style="display:none">
                         <div class="panel-header">
                             <h3 style="display: flex; align-items: center; gap: 8px;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3m1 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m11 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m-2-5h4l2 5v3h-7v-8Z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M10 17h4V5H2v12h3m1 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m11 0a2 2 0 1 0 4 0 2 2 0 1 0-4 0m-2-5h4l2 5v3h-7v-8Z" />
+                                </svg>
                                 <span>Faol Dastavkalar</span>
                             </h3>
                         </div>
@@ -796,7 +823,8 @@
 
                         <!-- Delivery Info -->
                         <div class="checkout-section">
-                            <div class="section-label" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;">
+                            <div class="section-label"
+                                style="display: flex; align-items: center; justify-content: space-between; gap: 8px; width: 100%;">
                                 <div style="display: flex; align-items: center; gap: 8px;">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -806,8 +834,18 @@
                                     </svg>
                                     <span data-i18n="delivery_addr_label">Yetkazib berish manzili</span>
                                 </div>
-                                <button type="button" onclick="getMyLocation()" class="btn-location" style="background: rgba(108,92,231,0.1); color: var(--primary); border: none; padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: 0.3s;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg>
+                                <button type="button" onclick="getMyLocation()" class="btn-location"
+                                    style="background: rgba(108,92,231,0.1); color: var(--primary); border: none; padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; cursor: pointer; display: flex; align-items: center; gap: 4px; transition: 0.3s;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <circle cx="12" cy="12" r="3" />
+                                        <line x1="12" y1="2" x2="12" y2="5" />
+                                        <line x1="12" y1="19" x2="12" y2="22" />
+                                        <line x1="2" y1="12" x2="5" y2="12" />
+                                        <line x1="19" y1="12" x2="22" y2="12" />
+                                    </svg>
                                     Joylashuvni aniqlash
                                 </button>
                             </div>
@@ -859,6 +897,10 @@
                                 </select>
                             </div>
                             <div class="form-group" id="downpaymentGroup" style="display:none; margin-top:1rem;">
+                                <div style="margin-bottom: 1rem;">
+                                    <label data-i18n="enter_passport_jshir">JSHIR yoki Pasport seriya va raqamini kiriting:</label>
+                                    <input type="text" id="installmentPassport" placeholder="Masalan: AB1234567 yoki 3290494..." style="width: 100%; padding: 0.8rem; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); color: var(--text);">
+                                </div>
                                 <label data-i18n="enter_downpayment">Boshlang'ich to'lovni kiriting (Eng kamida umumiy
                                     summaning 20% bo'lishi
                                     kerak):</label>
@@ -928,7 +970,7 @@
                         <div class="form-group" style="text-align: left;">
                             <label data-i18n="second_password_label">Ikkinchi Parol</label>
                             <div class="pw-wrapper">
-                                <input type="password" id="adminSecondaryPassword" required placeholder="••••••••">
+                                <input type="password" id="adminSecondaryPassword" required placeholder="••••••••" style="-webkit-text-security: disc;">
                                 <button type="button" class="pw-eye-btn"
                                     onclick="togglePw('adminSecondaryPassword', this)" title="Ko'rsatish"
                                     data-i18n-title="show">👁</button>
@@ -983,7 +1025,7 @@
                         <div class="form-group" style="text-align: left;">
                             <label data-i18n="password">Parol</label>
                             <div class="pw-wrapper">
-                                <input type="password" id="authPassword" required placeholder="Maxfiy parol">
+                                <input type="password" id="authPassword" required placeholder="••••••••" style="-webkit-text-security: disc;">
                                 <button type="button" class="pw-eye-btn" onclick="togglePw('authPassword', this)"
                                     title="Parolni ko'rsatish">👁</button>
                             </div>
@@ -1236,20 +1278,20 @@
         <div class="modal-overlay" id="categoryModal">
             <div class="modal" style="max-width:480px">
                 <div class="modal-header" style="position:relative;">
-                    <button onclick="closeModal('categoryModal')"
-                        style="position:absolute; top:0; left:0; background:none; border:none; cursor:pointer;
+                    <button onclick="closeModal('categoryModal')" style="position:absolute; top:0; left:0; background:none; border:none; cursor:pointer;
                                display:flex; align-items:center; gap:6px; color:var(--text2); font-size:0.88rem;
                                font-weight:600; padding:4px 8px; border-radius:8px; transition:all 0.2s;"
                         onmouseover="this.style.background='var(--bg3)'; this.style.color='var(--primary)'"
                         onmouseout="this.style.background='none'; this.style.color='var(--text2)'">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M19 12H5"/><path d="m12 5-7 7 7 7"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 12H5" />
+                            <path d="m12 5-7 7 7 7" />
                         </svg>
                         Orqaga
                     </button>
-                    <h3 id="catModalTitle" style="text-align:center; width:100%; margin-top:0.5rem;">Yangi Katalog Qo'shish</h3>
+                    <h3 id="catModalTitle" style="text-align:center; width:100%; margin-top:0.5rem;">Yangi Katalog
+                        Qo'shish</h3>
                     <button class="close-btn" onclick="closeModal('categoryModal')">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -1257,38 +1299,55 @@
                         Tez qo'shish uchun pastdagi tugmalardan birini bosing yoki o'zingiz nom kiriting:
                     </p>
                     <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem" id="catPresetBtns">
-                        <button onclick="quickAddCategory(this,'Telefonlar')" class="cat-preset-btn">📱 Telefonlar</button>
-                        <button onclick="quickAddCategory(this,'Televizorlar')" class="cat-preset-btn">📺 Televizorlar</button>
-                        <button onclick="quickAddCategory(this,'Planshetlar')" class="cat-preset-btn">📟 Planshetlar</button>
-                        <button onclick="quickAddCategory(this,'Quloqchinlar')" class="cat-preset-btn">🎧 Quloqchinlar</button>
-                        <button onclick="quickAddCategory(this,'Maishiy texnika')" class="cat-preset-btn">🏠 Maishiy texnika</button>
-                        <button onclick="quickAddCategory(this,'Fotoapparatlar')" class="cat-preset-btn">📷 Fotoapparatlar</button>
-                        <button onclick="quickAddCategory(this,&quot;O\'yin konsollar&quot;)" class="cat-preset-btn">🎮 O'yin konsollar</button>
-                        <button onclick="quickAddCategory(this,'Printerlar')" class="cat-preset-btn">🖨️ Printerlar</button>
+                        <button onclick="quickAddCategory(this,'Telefonlar')" class="cat-preset-btn">📱
+                            Telefonlar</button>
+                        <button onclick="quickAddCategory(this,'Televizorlar')" class="cat-preset-btn">📺
+                            Televizorlar</button>
+                        <button onclick="quickAddCategory(this,'Planshetlar')" class="cat-preset-btn">📟
+                            Planshetlar</button>
+                        <button onclick="quickAddCategory(this,'Quloqchinlar')" class="cat-preset-btn">🎧
+                            Quloqchinlar</button>
+                        <button onclick="quickAddCategory(this,'Maishiy texnika')" class="cat-preset-btn">🏠 Maishiy
+                            texnika</button>
+                        <button onclick="quickAddCategory(this,'Fotoapparatlar')" class="cat-preset-btn">📷
+                            Fotoapparatlar</button>
+                        <button onclick="quickAddCategory(this,&quot;O\'yin konsollar&quot;)" class="cat-preset-btn">🎮
+                            O'yin konsollar</button>
+                        <button onclick="quickAddCategory(this,'Printerlar')" class="cat-preset-btn">🖨️
+                            Printerlar</button>
                     </div>
                     <div class="form-group">
                         <label>Yoki o'z katalog nomingizni kiriting:</label>
-                        <input type="text" id="catNameInput"
-                            placeholder="Masalan: Kir yuvish mashinalari"
+                        <input type="text" id="catNameInput" placeholder="Masalan: Kir yuvish mashinalari"
                             style="width:100%;padding:0.85rem;border:1.5px solid var(--border);border-radius:10px;background:var(--bg3);color:var(--text);font-size:0.95rem;outline:none;transition:border-color 0.2s"
                             onfocus="this.style.borderColor='var(--primary)'"
                             onblur="this.style.borderColor='var(--border)'"
                             onkeydown="if(event.key==='Enter') saveCategory()">
                     </div>
-                    <button class="buy-btn" onclick="saveCategory()" style="margin-top:1rem;width:100%;display:flex;align-items:center;justify-content:center;gap:8px">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                    <button class="buy-btn" onclick="saveCategory()"
+                        style="margin-top:1rem;width:100%;display:flex;align-items:center;justify-content:center;gap:8px">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" />
                         </svg>
                         Katalog qo'shish
                     </button>
 
                     <!-- Existing Categories Management -->
                     <div style="margin-top: 2rem; border-top: 1px solid var(--border); padding-top: 1.5rem;">
-                        <h4 style="font-size: 0.95rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                        <h4
+                            style="font-size: 0.95rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 8px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 20h9" />
+                                <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" />
+                            </svg>
                             Mavjud kataloglarni boshqarish
                         </h4>
-                        <div id="modalCatList" style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 200px; overflow-y: auto; padding-right: 5px;">
+                        <div id="modalCatList"
+                            style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 200px; overflow-y: auto; padding-right: 5px;">
                             <!-- JS fills this -->
                         </div>
                     </div>
